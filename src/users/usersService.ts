@@ -15,6 +15,9 @@ export class UsersService {
   }
 
   public create(userCreationParams: UserCreationParams): User {
+    console.log("====================================");
+    console.log(userCreationParams);
+    console.log("====================================");
     return {
       id: Math.floor(Math.random() * 10000), // Random
       status: "Happy",
